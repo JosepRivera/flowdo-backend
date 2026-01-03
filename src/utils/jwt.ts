@@ -2,8 +2,8 @@ import jwt, { type SignOptions, type JwtPayload } from "jsonwebtoken";
 
 const ACCESS_SECRET = process.env.JWT_ACCESS_SECRET!;
 const REFRESH_SECRET = process.env.JWT_REFRESH_SECRET!;
-const ACCESS_EXPIRES_IN = process.env.JWT_ACCESS_EXPIRES_IN!;
-const REFRESH_EXPIRES_IN = process.env.JWT_REFRESH_EXPIRES_IN!;
+const ACCESS_EXPIRES_IN = process.env.JWT_ACCESS_EXPIRES_IN;
+const REFRESH_EXPIRES_IN = process.env.JWT_REFRESH_EXPIRES_IN;
 
 export type AccessTokenPayload = {
   sub: string;
